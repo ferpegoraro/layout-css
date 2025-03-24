@@ -1,11 +1,50 @@
 .container{
-    border: dashed 3px;
+    border: dashed 3px; /* borda tracejada de 3px para visualizar o contêiner */
+    /* width: 200px; */ /* define a largura do contêiner (comentado) */
 }
-
 
 .item{
-    --hue: 0;
-    text-align: center;
-    background-color: hsl(var(--hue), 100%, 70%);
+    --hue: 0; /* define uma variável CSS para o matiz da cor */
+    text-align: center; /* centraliza o texto dentro do item */
+    background-color: hsl(var(--hue), 100%, 70%); /* define a cor de fundo usando o matiz */
+    width: 50px; /* define a largura fixa dos itens */
     
+    /* flex-basis: 120px; */ /* define o tamanho inicial do item antes da distribuição do espaço */
+
+    /* flex-grow: 1; */ /* define quanto o item pode crescer (valor correto sem 'px') */
+
+    /* flex-shrink: 2; */ /* define quanto o item pode encolher (valor correto sem 'px') */
 }
+
+.item:nth-child(6){
+    /* flex-grow: 3; */ /* permite que o 6º item cresça mais do que os outros */
+
+    /* flex-shrink: 2; */ /* permite que ele encolha mais rápido que os outros */
+
+    /* order: -1; */ /* exibe este item antes dos outros */
+
+    /* order: 1; */ /* exibe este item após os outros (padrão é 0) */
+}
+
+.container{
+    display: flex; /* ativa o layout flexbox no contêiner */
+    
+    /* flex-direction: row; */ /* itens em linha (padrão) */
+    /* flex-direction: column; */ /* itens empilhados em coluna */
+    /* flex-direction: row-reverse; */ /* linha, mas ordem invertida */
+    /* flex-direction: column-reverse; */ /* coluna, mas ordem invertida */
+    
+    /* justify-content: center; */ /* centraliza os itens no eixo principal */
+    /* justify-content: space-around; */ /* espaça com margem igual nas bordas */
+    /* justify-content: space-between; */ /* espaça com margem apenas entre os itens */
+   
+    /* align-items: center; */ /* alinha itens ao centro do eixo cruzado */
+    /* gap: 10px; */ /* espaçamento entre os itens (linha e coluna) */
+    
+    /* row-gap: 2rem; */ /* espaçamento vertical entre linhas (em wrap) */
+    /* column-gap: 2rem; */ /* espaçamento horizontal entre colunas */
+
+    /* align-content: center; */ /* alinha múltiplas linhas no eixo cruzado (quando wrap está ativo) */
+    /* flex-wrap: wrap; */ /* permite que itens quebrem para nova linha/coluna */
+}
+
