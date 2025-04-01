@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.grid{
+display: grid;
+
+grid-template-columns: repeat(3 ,100px);
+grid-template-rows: repeat(3, 100px);
+gap:8px;
+
+/* align-content: space-around;
+align-content: space-between;
+align-content: end;
+align-content: start;
+/* align-content: center; */
+/* mexe com o eixo y */
+
+/* justify-content: space-around;
+justify-content: space-between;
+justify-content: end;
+justify-content: start;
+justify-content: center; */
+/* mexe com o eixo x */
+
+/* place-content: end;
+place-content: space-around;
+place-content: center;
+place-content: start;
+place-content: space-between; */
+/* mexe com os dois eixos x e y */
+
+/* align-items: start;
+align-items: end;
+align-items: center; */
+/* trabalha com eixo x */
+
+/* justify-items: start;
+justify-items: end;
+justify-items: center; */
+/* trabalha com eixo y */
+
+/* place-items: start;
+place-items: end;
+place-items: center; */
+/* trabalha com os dois eixos */
+
+
+
+
+height: 100vh;
+background-color: black;
+}
+
+.grid > div{
+    background-color: cornflowerblue;
+}
+
